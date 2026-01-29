@@ -1,1 +1,94 @@
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!doctype html>
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lcultra</title>
+        <link rel="icon" type="image/x-icon" href="https://lclove.de5.net/favicon.ico" />
+        <style>
+            body {
+                margin: 0;
+            }
+            iframe {
+                width: 100vw;
+                height: 100vh;
+                border: none;
+            }
+        </style>
+    </head>
+
+    <body>
+        <script>
+            var ip = '47.93.157.119';
+            var map = {
+                'lcultra.de5.net': 8801,
+                'gitea.lcultra.de5.net': 8802,
+                'dockge.lcultra.de5.net': 8800,
+            };
+            var host = 'http://' + ip + ':' + (map[location.host] || map['lcultra.de5.net']);
+            const iframe = document.createElement('iframe');
+            iframe.src = host;
+            document.body.appendChild(iframe);
+        </script>
+    </body>
+</html>
